@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qFE-o1-2hK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qEF-Cw-5FH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="X5m-gb-3uj"/>
+                                </connections>
+                            </tableView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XtK-an-4we" userLabel="header">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2yo-qR-2C5">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="火影.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xaB-PE-fXY">
+                                        <rect key="frame" x="137.5" y="36" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Mhd-ho-hGY"/>
+                                            <constraint firstAttribute="width" constant="100" id="Q4l-lN-90t"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.47936800239999999" blue="0.90872929270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xaB-PE-fXY" firstAttribute="centerX" secondItem="XtK-an-4we" secondAttribute="centerX" id="2zG-Nu-Mq7"/>
+                                    <constraint firstItem="2yo-qR-2C5" firstAttribute="leading" secondItem="XtK-an-4we" secondAttribute="leading" id="PKb-0I-Fsq"/>
+                                    <constraint firstItem="2yo-qR-2C5" firstAttribute="top" secondItem="XtK-an-4we" secondAttribute="top" id="Vv6-oI-IvT"/>
+                                    <constraint firstAttribute="bottom" secondItem="xaB-PE-fXY" secondAttribute="bottom" constant="64" id="ajo-jC-xLe"/>
+                                    <constraint firstAttribute="bottom" secondItem="2yo-qR-2C5" secondAttribute="bottom" id="cyY-xo-BDH"/>
+                                    <constraint firstAttribute="height" constant="200" id="hPS-GC-E1J"/>
+                                    <constraint firstAttribute="trailing" secondItem="2yo-qR-2C5" secondAttribute="trailing" id="r9E-fJ-UqV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-k6-5Q7" userLabel="sectionHeader">
+                                <rect key="frame" x="0.0" y="200" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.47936800239999999" blue="0.90872929270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="l6j-yt-eiB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vkl-k6-5Q7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8ge-R7-xgK"/>
+                            <constraint firstItem="qFE-o1-2hK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OUZ-EQ-0SJ"/>
+                            <constraint firstItem="qFE-o1-2hK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hsG-t7-69K"/>
+                            <constraint firstItem="vkl-k6-5Q7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kNt-Eq-BHi"/>
+                            <constraint firstItem="XtK-an-4we" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oxW-cX-4fa"/>
+                            <constraint firstItem="XtK-an-4we" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rCK-zj-C23"/>
+                            <constraint firstItem="XtK-an-4we" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vCV-QG-92u"/>
+                            <constraint firstItem="qFE-o1-2hK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="w9S-84-m9b"/>
+                            <constraint firstItem="qFE-o1-2hK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wCa-rI-xEY"/>
+                            <constraint firstItem="vkl-k6-5Q7" firstAttribute="top" secondItem="XtK-an-4we" secondAttribute="bottom" id="x3g-eS-ZS1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageHeight" destination="hPS-GC-E1J" id="R8h-AH-fTS"/>
+                        <outlet property="tableView" destination="qFE-o1-2hK" id="4PH-cr-RkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg.jpg" width="1300" height="975"/>
+        <image name="火影.jpg" width="200" height="200"/>
+    </resources>
+</document>
